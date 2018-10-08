@@ -1,10 +1,6 @@
-var youLikeMeat = true;
-var myNum = 9;
-
-if (youLikeMeat) {
-    document.write('this is true');
+var myAge = 25;
+if (myAge < 18 || myAge > 30) {
+    document.write ('you can come')
 } else {
-    document.write('this is false')
+    document.write('you aint come')
 }
-
-
