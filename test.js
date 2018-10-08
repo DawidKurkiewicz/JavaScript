@@ -1,6 +1,8 @@
-var myAge = 25;
-if (myAge < 18 || myAge > 30) {
-    document.write ('you can come')
-} else {
-    document.write('you aint come')
+var links = document.getElementsByTagName('a') ;
+for (i = 1; i < links.length; i++) {
+    console.log('this is link number' + i);
+    
+    
+    
 }
+document.write('all link now lopped')
