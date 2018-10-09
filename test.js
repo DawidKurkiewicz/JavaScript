@@ -1,12 +1,26 @@
-var birthday = new Date(1985, 0, 15, 11, 15, 25);
-var birthday2 = new Date(1985, 0, 15, 11, 15, 25);
+function setUpEvents(){
+    var content = document.getElementById('content');
+    var button = document.getElementById('show-more');
 
-console.log(birthday.getMonth());
-console.log(birthday.getFullYear());
-console.log(birthday.getTime());
+    button.onclick = function() {
 
-if(birthday.getTime == birthday2.getTime){
-    console.log('equal');
-} else {
-    console.log('not equal');
+        if(content.className == 'open'){
+            
+            content.className = ''
+            button.innerHTML = 'show more';
+
+        } else {
+        
+            content.className = 'open';
+            button.innerHTML = 'show less';
+        }
+
+    };
 }
+
+window.onload = function(){
+    setUpEvents();
+
+};
+
+
