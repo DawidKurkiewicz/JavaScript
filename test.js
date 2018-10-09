@@ -1,26 +1,8 @@
-function setUpEvents(){
-    var content = document.getElementById('content');
-    var button = document.getElementById('show-more');
-
-    button.onclick = function() {
-
-        if(content.className == 'open'){
-            
-            content.className = ''
-            button.innerHTML = 'show more';
-
-        } else {
-        
-            content.className = 'open';
-            button.innerHTML = 'show less';
-        }
-
-    };
+var colourChanger = document.getElementById('colour-changer');
+var colours = ['red', 'blue', 'green', 'pink'];
+var counter = 0;
+function changeColour (){
+    colourChanger.style.background = colours[counter];
+    counter++;
 }
-
-window.onload = function(){
-    setUpEvents();
-
-};
-
-
+setInterval(changeColour,3000);  
