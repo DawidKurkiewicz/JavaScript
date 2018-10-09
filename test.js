@@ -1,5 +1,9 @@
-var a = 5; 
+var a = 6; 
 var b = 5;
-console.log(a + b);
 
-console.log(Math.round(7.5));
+if (!isNaN(a)) {
+    console.log('that aint even a number');
+
+} else {
+    console.log('meaning of lige is ' + (a+b));
+}
